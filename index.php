@@ -31,12 +31,7 @@
 						while ($row = mysqli_fetch_array($result)) {
 
 
-						$build = '<img src="'.$row['img'].'">';
-						$build .= "<h1>" . "$row['name']" . "</h1>";
-						$build .= "<h2>" . "$row['score']" . "</h2>";
-						$build .= "<h2>" . "$row['price']" . "</h2>";
-						$build .= "<h2>" . "$row['year']" . "</h2>";
-						$build .= "<p>" . "$row['description']" . "</p>";
+						$build = '<img src="'.$row['img'].'">' . "<h1>" . "$row['name']" . "</h1>" . "<h2>" . "$row['score']" . "</h2>" . "<h2>" . "$row['price']" . "</h2>" . "<h2>" . "$row['year']" . "</h2>" . "<p>" . "$row['description']" . "</p>";
 
 
 						echo $build;
