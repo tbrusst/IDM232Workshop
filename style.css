@@ -1,0 +1,70 @@
+html {
+	background-color: #FFF8F4;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+h1 {
+	font-family: 'Playball', cursive;
+	text-align: center;
+	font-size: 3.75em; /* 60/16 */
+	width: 100%;
+
+}
+
+body {
+
+	font-family: 'Muli', sans-serif;
+	background-image: url('images/whirlpool.png');
+
+
+}
+
+
+.content {
+	display: flex;
+	justify-content: center;
+	flex-flow: row wrap;
+}
+
+.hero {
+
+	/*background-color: #190A08;*/
+	background-size: 100% auto;
+}	
+
+.hero img{
+	margin: auto;
+	display: flex;
+	justify-content: center;
+}
+
+.stretch {
+	width: 100%;
+}
+
+.wines {
+	list-style: none;
+	text-decoration: none;
+	text-align: left;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	max-width: 100%;
+
+}
+
+@media screen and (min-width: 21.875em) /* 350/16 */
+{
+    
+   .wines {
+        font-size: 1.75em; /* 28/16 */
+        line-height: 1.5rem;
+        max-width: 100%;
+    }
+
+
+
+}
