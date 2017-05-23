@@ -1,3 +1,24 @@
+<?php
+
+  include('connect.php');
+
+  // Step 2: Preform Database Query
+  $query = "SELECT * FROM wine";
+  $result = mysqli_query($connection, $query);
+  // Check there are no errors with our SQL statement
+  if (!$result) {
+    die ("Database query failed.");
+  }
+
+ ?>
+
+
+
+
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -26,17 +47,16 @@
 				<h1>Wines</h1>
 
 				<div class="wines">
-					<?php
 
-						while ($row = mysqli_fetch_array($result)) {
+				<?php 
+				
+					while ($row = mysqli_fetch_array($result)) {
+					$build = "<div>" . "<h1>" . $row['name'] . "</h1>" . '<img src="'.$row['img'].'">' . "<p>" . $row['description']  . "</p>" . "</div>";
+					echo $build;
+				};
+				?>
 
-
-						$build = '<img src="'.$row['img'].'">' . "<h1>" . "$row['name']" . "</h1>" . "<h2>" . "$row['score']" . "</h2>" . "<h2>" . "$row['price']" . "</h2>" . "<h2>" . "$row['year']" . "</h2>" . "<p>" . "$row['description']" . "</p>";
-
-
-						echo $build;
-					};
-					?>
+				
 
 
 
