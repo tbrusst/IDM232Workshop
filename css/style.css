@@ -27,9 +27,16 @@ body {
 }
 
 .hero {
-	
-}
+	max-width: 100%;
+}	
 
+.wines {
+	list-style: none;
+	text-decoration: none;
+	text-align: left;
+	display: flex;
+	justify-content: left;
+}
 
 @media screen and (min-width: 700px)
 {
