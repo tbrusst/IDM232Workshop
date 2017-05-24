@@ -4,16 +4,33 @@ html {
 
 * {
 	box-sizing: border-box;
+	background-image: url('images/whirlpool.png');
 }
 
-h1 {
+h1, h2, h3{
 	font-family: 'Playball', cursive;
+}
+
+h3 {
 	text-align: center;
 	font-size: 3.75em; /* 60/16 */
 	width: 100%;
-
 }
 
+h1 {
+	font-size: 40px;
+	line-height: 36px;
+}
+
+h2 { 
+	font-size: 24px;
+	line-height: 0px;
+}
+
+
+p { 
+	font-family: 'Muli', sans-serif;
+}
 body {
 
 	font-family: 'Muli', sans-serif;
