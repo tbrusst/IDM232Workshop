@@ -1,10 +1,4 @@
 
-
-
-
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -33,7 +27,18 @@
 				<h3>Wines</h3>
 
 				<div class="wines">
+					<div class="wine">
+						<img src="" alt="">
+						<h1>title</h1>  <br>
+						<h2>score</h2>  <br>
 
+						<h2>year</h2> 
+						<br>
+						<h2>price</h2> 
+						<br>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut dignissimos sed, officia harum distinctio incidunt, aspernatur. Illum doloremque tempora harum eaque dolorem dolorum, aspernatur ad vitae quam, odio nam odit?</p>
+					</div>
+					
 
 
 
